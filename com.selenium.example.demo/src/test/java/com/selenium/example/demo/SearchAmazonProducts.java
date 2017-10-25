@@ -11,6 +11,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.cucumber.pages.AmazonPages;
 
+import cucumber.api.Scenario;
+import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -19,6 +21,13 @@ public class SearchAmazonProducts {
 	
 	WebDriver driver;
 	AmazonPages ap;
+	Scenario scenario;
+	
+	@Before
+	public void print(Scenario scenario)
+	{
+		scenario.write("hi baskar");
+	}
 	
 	@Given("^I've a valid set of products to access amzon\\.es search page$")
 	public void i_ve_a_valid_set_of_products_to_access_amzon_es_search_page() throws Throwable {
