@@ -1,0 +1,118 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#Author: baskar10576@gmail.com"
+      }
+    ],
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "I\u0027ve a valid set of products to access amzon.es search page",
+            "match": {},
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 20,
+        "name": "Search products in amazon es and add to whishlist",
+        "description": "",
+        "id": "search-mi-note-4-mobile-in-amazon.es-and-add-to-whishlist;search-products-in-amazon-es-and-add-to-whishlist;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "I enter amazon url",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11,
+            "name": "I went to amazon home page",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12,
+            "name": "Enter valid product name in the search area mi note 4 mobile",
+            "match": {},
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 13,
+            "name": "Click on search button",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 14,
+            "name": "Sort products from low to high",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 15,
+            "name": "Select product",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 16,
+            "name": "Click Add to wish list",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 8,
+            "name": "@Amazon"
+          }
+        ]
+      }
+    ],
+    "name": "Search mi note 4 mobile in amazon.es and add to whishlist",
+    "description": "",
+    "id": "search-mi-note-4-mobile-in-amazon.es-and-add-to-whishlist",
+    "keyword": "Feature",
+    "uri": "src/test/resources/SearchAmazonProducts.feature"
+  }
+]
