@@ -13,7 +13,7 @@ public class AmazonPages {
 
 	public void setValueSearch(String pro) {
 		driver.findElement(product).sendKeys(pro);
-		System.out.println("hi1");
+		System.out.println("hi1hi1");
 	}
 
 }
