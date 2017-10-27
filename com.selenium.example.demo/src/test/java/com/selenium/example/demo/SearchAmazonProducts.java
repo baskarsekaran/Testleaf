@@ -69,19 +69,20 @@ public class SearchAmazonProducts {
 
 	@Then("^Sort products from low to high$")
 	public void sort_products() throws Throwable {
-		if(driver.findElement(By.id("sort")).isDisplayed())
-		{
-			Thread.sleep(3000);
-			Select dp = new Select(driver.findElement(By.id("sort")));
-			dp.selectByVisibleText("Precio: de más bajo a más alto");
-		}
-		else
-		{
-			Thread.sleep(3000);
-			driver.findElement(By.xpath("//*[@id='sortPopover']/a/i")).click();
-		
-		}
+		try {
+			if(driver.findElement(By.id("sort")).isDisplayed())
+			{
+				Thread.sleep(3000);
+				Select dp = new Select(driver.findElement(By.id("sort")));
+				dp.selectByVisibleText("Precio: de más bajo a más alto");
+			}
 
+		} catch (Exception e) {
+
+			Thread.sleep(3000);
+			driver.findElement(By.xpath("//*[@id='sortPopover']/a/span")).click();
+			driver.findElement(By.xpath("//*[@id='a-popover-content-1']/span/span[2]")).click();
+		}
 	}
 
 	@Then("^Select product$")
